@@ -1,8 +1,15 @@
-import './App.css';
-import {Env} from './components/Env/Env';
+import {Crud} from './components/Crud/Crud';
+// import {Env} from './components/Env/Env';
+
+import classes from './App.module.scss';
 
 function App() {
-  return <Env />;
+  return (
+    <div className={classes.App}>
+      {/* <Env />; */}
+      <Crud />
+    </div>
+  );
 }
 
 export default App;
